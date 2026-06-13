@@ -1,0 +1,84 @@
+/* CSS Dasar - Tema Maroon */
+body { 
+    font-family: 'Segoe UI', sans-serif; 
+    /* Background sedikit pastel maroon ke abu-abu */
+    background: linear-gradient(135deg, #fce4ec, #f8f9fa); 
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    height: 100vh; 
+    margin: 0; 
+}
+
+.login-card { 
+    background: white; 
+    padding: 40px; 
+    border-radius: 20px; 
+    /* Shadow menyesuaikan tema maroon */
+    box-shadow: 0 10px 25px rgba(138, 21, 56, 0.15); 
+    width: 320px; 
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.login-card:hover { transform: translateY(-5px); }
+
+.logo { 
+    width: 80px; 
+    margin-bottom: 15px; 
+}
+
+/* Judul Aplikasi */
+h2 { color: #8A1538; margin-bottom: 25px; font-weight: bold; } 
+
+input { 
+    width: 100%; 
+    padding: 14px; 
+    margin: 10px 0; 
+    border: 2px solid #eee; 
+    border-radius: 10px; 
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+/* Interaksi Input - Fokus Maroon */
+input:focus { 
+    border-color: #8A1538; 
+    outline: none; 
+    box-shadow: 0 0 8px rgba(138, 21, 56, 0.2); 
+}
+
+/* Tombol Utama - Maroon UNSIKA */
+button { 
+    width: 100%; 
+    padding: 14px; 
+    background: #8A1538; 
+    color: white; 
+    border: none; 
+    border-radius: 10px; 
+    cursor: pointer; 
+    font-weight: bold;
+    margin-top: 10px;
+    transition: background 0.3s, transform 0.2s;
+}
+
+/* Hover Tombol - Maroon Gelap */
+button:hover { 
+    background: #6B102B; 
+    transform: scale(1.02); 
+}
+
+/* Teks buat pindah Login / Daftar */
+.toggle-text {
+    margin-top: 20px;
+    font-size: 13px;
+    color: #666;
+}
+.toggle-text span {
+    color: #8A1538;
+    font-weight: bold;
+    cursor: pointer;
+}
+.toggle-text span:hover {
+    text-decoration: underline;
+}
